@@ -12,7 +12,7 @@ public:
 
 	}
 
-	void Update(const tm*)
+	void Update(const tm* invokedTime)
 	{
 
 	}
