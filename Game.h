@@ -4,9 +4,9 @@
 class Game
 {
 private:
-	int componentCount;
+	int componentCount = 0;
 	GameComponent** components;
-	typedef void FP();
+	typedef void (*FP)();
 	FP initialise;
 	FP terminate;
 	const int TICKS_1000MS;
@@ -14,7 +14,8 @@ private:
 public:
 	void Add(GameComponent* gameComponent)
 	{
-		components = new GameComponent*(gameComponent);
+		components[componentCount] = gameComponent;
+		componentCount++;
 	}
 
 	Game(int maxComponents)
@@ -29,12 +30,12 @@ public:
 
 	void SetInitialise(FP init)
 	{
-
+		initialise = init;
 	}
 
 	void SetTerminate(FP term)
 	{
-
+		terminate = term;
 	}
 };
 
