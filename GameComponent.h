@@ -14,10 +14,10 @@ public:
 		id = instances;
 	}
 
-	void Update(const tm* invokedTime)
+	void Update(const tm* eventTime)
 	{
 		std::cout << "ID: " << id;
-		std::cout << "Time of Invocation: " << instances;
+		std::cout << "Time of Invocation: " << eventTime;
 	}
 };
 
