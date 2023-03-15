@@ -1,6 +1,6 @@
 #pragma once
 #include "GameComponent.h"
-#include <minwindef.h>
+#include <windows.h>
 class DrawableGameComponent : public GameComponent
 {
 
