@@ -22,7 +22,7 @@ private:
 
 	void Draw()
 	{
-
+		std::cout << "Current Direction: " << direction << ", X: " << x << ", Y: " << y;
 	}
 public:
 
