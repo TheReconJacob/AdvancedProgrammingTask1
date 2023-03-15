@@ -2,10 +2,26 @@
 //
 
 #include <iostream>
+#include "Game.h"
+#include "DrawableGameComponent.h"
+#include <Windows.h>
+
+void initialise() {
+    std::cout << "Initialising..." << std::endl;
+}
+
+void terminate() {
+    std::cout << "Terminating..." << std::endl;
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Game* game = new Game(5);
+    game->SetInitialise(initialise);
+    game->SetTerminate(terminate);
+    game->Add(new GameComponent());
+    game->Add(new DrawableGameComponent(0, 0));
+    game->Run();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

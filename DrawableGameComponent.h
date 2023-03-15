@@ -28,7 +28,7 @@ private:
 
 	void Draw()
 	{
-		std::cout << "Current Direction: " << direction << ", X: " << x << ", Y: " << y;
+		std::cout << "Current Direction: " << direction << ", X: " << x << ", Y: " << y << std::endl;
 	}
 public:
 

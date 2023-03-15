@@ -1,6 +1,12 @@
-﻿  DrawableGameComponent.cpp
+﻿  AdvancedProgrammingTask1.cpp
 C:\Users\jvt05\Documents\AdvancedProgrammingTask1\DrawableGameComponent.h(46,16): warning C4552: '-': result of expression not used
 C:\Users\jvt05\Documents\AdvancedProgrammingTask1\DrawableGameComponent.h(49,28): warning C4552: '+': result of expression not used
 C:\Users\jvt05\Documents\AdvancedProgrammingTask1\DrawableGameComponent.h(52,17): warning C4552: '-': result of expression not used
 C:\Users\jvt05\Documents\AdvancedProgrammingTask1\DrawableGameComponent.h(55,29): warning C4552: '+': result of expression not used
+C:\Users\jvt05\Documents\AdvancedProgrammingTask1\AdvancedProgrammingTask1.cpp(13,18): warning C5043: 'terminate': exception specification does not match previous declaration
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\corecrt_terminate.h(29): message : see declaration of 'terminate'
+C:\Users\jvt05\Documents\AdvancedProgrammingTask1\AdvancedProgrammingTask1.cpp(13,18): warning C4273: 'terminate': inconsistent dll linkage
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\corecrt_terminate.h(29,48): message : see previous definition of 'terminate'
+  Game.cpp
+  Generating Code...
   AdvancedProgrammingTask1.vcxproj -> C:\Users\jvt05\Documents\AdvancedProgrammingTask1\Debug\AdvancedProgrammingTask1.exe

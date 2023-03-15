@@ -6,7 +6,7 @@
 class Game
 {
 private:
-	int componentCount = 0;
+	int componentCount;
 	GameComponent** components;
 	typedef void (*FP)();
 	FP initialise;
@@ -20,9 +20,12 @@ public:
 		componentCount++;
 	}
 
+	Game() {}
+
 	Game(int maxComponents)
 	{
-
+		components = new GameComponent*[maxComponents];
+		componentCount = 0;
 	}
 
 	void Run()

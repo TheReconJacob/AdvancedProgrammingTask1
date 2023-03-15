@@ -16,8 +16,8 @@ public:
 
 	void Update(const tm* eventTime)
 	{
-		std::cout << "ID: " << id;
-		std::cout << "Time of Invocation: " << eventTime;
+		std::cout << "ID: " << id << std::endl;
+		std::cout << "Time of Invocation: " << eventTime << std::endl;
 	}
 };
 
