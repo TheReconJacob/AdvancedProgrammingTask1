@@ -40,7 +40,7 @@ public:
 	}
 	void Update(const tm* eventTime)
 	{
-		std::cout << "Time of Invocation: " << eventTime;
+		GameComponent::Update(eventTime);
 		switch (direction) {
 		case Left:
 			if(x > 0) x - 1;
