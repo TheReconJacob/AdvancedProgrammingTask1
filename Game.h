@@ -30,7 +30,7 @@ public:
 
 	void Run()
 	{
-		initialise;
+		initialise();
 		for (int i = 0; i < componentCount; i++)
 		{
 			for(int inv = 0; inv < 5; inv++)
@@ -42,7 +42,7 @@ public:
 				Sleep(TICKS_1000MS);
 			}
 		}
-		terminate;
+		terminate();
 	}
 
 	void SetInitialise(FP init)
