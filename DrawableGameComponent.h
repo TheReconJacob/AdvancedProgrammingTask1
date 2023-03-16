@@ -18,8 +18,7 @@ private:
 	void ChangeDirection()
 	{
 		Direction newDirection;
-		newDirection = direction;
-		for (Direction newDirection; newDirection == direction;)
+		for (newDirection = direction; newDirection == direction;)
 		{
 			newDirection = Direction(rand() % Down);
 		}

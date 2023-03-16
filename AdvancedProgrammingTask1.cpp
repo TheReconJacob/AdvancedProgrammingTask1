@@ -16,7 +16,7 @@ void terminate() {
 
 int main()
 {
-    Game* game = new Game(5);
+    Game* game = new Game(2);
     game->SetInitialise(initialise);
     game->SetTerminate(terminate);
     game->Add(new GameComponent());

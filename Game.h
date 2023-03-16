@@ -33,7 +33,7 @@ public:
 		initialise;
 		for (int i = 0; i < componentCount; i++)
 		{
-			for(int inv = 0; inv <= 5; inv++)
+			for(int inv = 0; inv < 5; inv++)
 			{
 				time_t now = time(0);
 				tm invokedTime;
