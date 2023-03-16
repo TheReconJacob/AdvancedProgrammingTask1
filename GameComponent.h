@@ -10,14 +10,15 @@ public:
 	GameComponent()
 	{
 		instances++;
-		std::cout << instances << std::endl;
 		id = instances;
 	}
 
 	virtual void Update(const tm* eventTime)
 	{
 		std::cout << "ID: " << id << std::endl;
-		std::cout << "Time of Invocation: " << eventTime << std::endl;
+		char displayedTime[50];
+		strftime(displayedTime, sizeof(displayedTime), "%I:%M:%S%p", eventTime);
+		std::cout << "Time of Invocation: " << displayedTime << std::endl;
 	}
 };
 

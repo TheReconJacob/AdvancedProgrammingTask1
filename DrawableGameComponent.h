@@ -20,7 +20,7 @@ private:
 		Direction newDirection;
 		for (newDirection = direction; newDirection == direction;)
 		{
-			newDirection = Direction(rand() % Down);
+			newDirection = Direction(std::rand() % (Down + 1 - Left) + Left);
 		}
 		direction = newDirection;
 	}
@@ -33,8 +33,8 @@ public:
 
 	DrawableGameComponent(int instanceX, int instanceY)
 	{
-		x = 0;
-		y = 0;
+		x = instanceX;
+		y = instanceY;
 		direction = Right;
 	}
 	void Update(const tm* eventTime)
@@ -42,16 +42,16 @@ public:
 		GameComponent::Update(eventTime);
 		switch (direction) {
 		case Left:
-			if(x > 0) x - 1;
+			if(x > 0) x -= 1;
 			break;
 		case Right:
-			if (x < SCREEN_WIDTH) x + 1;
+			if (x < SCREEN_WIDTH) x += 1;
 			break;
 		case Down:
-			if (y > 0) y - 1;
+			if (y > 0) y -= 1;
 			break;
 		case Up:
-			if (y < SCREEN_HEIGHT) y + 1;
+			if (y < SCREEN_HEIGHT) y += 1;
 			break;
 		}
 		Draw();
