@@ -3,6 +3,8 @@ C:\Users\jvt05\Documents\AdvancedProgrammingTask1\AdvancedProgrammingTask1.cpp(1
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\corecrt_terminate.h(29): message : see declaration of 'terminate'
 C:\Users\jvt05\Documents\AdvancedProgrammingTask1\AdvancedProgrammingTask1.cpp(13,18): warning C4273: 'terminate': inconsistent dll linkage
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\corecrt_terminate.h(29,48): message : see previous definition of 'terminate'
+  DrawableGameComponent.cpp
   Game.cpp
   Generating Code...
+     Creating library C:\Users\jvt05\Documents\AdvancedProgrammingTask1\Debug\AdvancedProgrammingTask1.lib and object C:\Users\jvt05\Documents\AdvancedProgrammingTask1\Debug\AdvancedProgrammingTask1.exp
   AdvancedProgrammingTask1.vcxproj -> C:\Users\jvt05\Documents\AdvancedProgrammingTask1\Debug\AdvancedProgrammingTask1.exe

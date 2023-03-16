@@ -27,7 +27,24 @@ private:
 
 	void Draw()
 	{
-		std::cout << "Current Direction: " << direction << ", X: " << x << ", Y: " << y << std::endl;
+		std::string directionValue;
+		
+		switch (direction) {
+		case Left:
+			directionValue = "Left";
+			break;
+		case Right:
+			directionValue = "Right";
+			break;
+		case Down:
+			directionValue = "Down";
+			break;
+		case Up:
+			directionValue = "Up";
+			break;
+	}
+
+		std::cout << "Current Direction: " << directionValue << ", X: " << x << ", Y: " << y << std::endl;
 	}
 public:
 
