@@ -5,6 +5,10 @@
 
 class Game
 {
+
+	//Previous commits had almost all of the functionality done in the .h files because I found it easier to have
+	//everything in one place. But since it's considered better practise to separate the .h and .cpp, I rectified this
+	//in later commits.
 private:
 	int componentCount;
 	GameComponent** components;

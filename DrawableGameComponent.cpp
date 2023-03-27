@@ -40,6 +40,9 @@ DrawableGameComponent::DrawableGameComponent(int instanceX, int instanceY)
 }
 void DrawableGameComponent::Update(const tm* eventTime)
 {
+	//By calling the gamecomponent update function, I can meet the requirements of having the ID logged despite it being
+	//private and not accessible in this class. Accessing it here directly would have required it to be changed to
+	//protected or public.
 	GameComponent::Update(eventTime);
 	switch (direction) {
 	case Left:

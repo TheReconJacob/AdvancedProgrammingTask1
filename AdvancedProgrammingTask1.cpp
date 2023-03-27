@@ -16,7 +16,10 @@ void terminate() {
 
 int main()
 {
+    //Having srand allowed me to make the rand() function truly random unless the app was run twice in the same second.
+    //Previously without srand, it had the same outcome in the terminal every time.
     srand(time(0));
+
     Game* game = new Game(2);
     game->SetInitialise(initialise);
     game->SetTerminate(terminate);
